@@ -16,7 +16,7 @@ const TopStudents = () => {
         "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=400",
       department: "Computer Science",
       gpa: "4.00",
-      role: "Gold Medalist",
+      role: "student",
       description:
         "Alex is an exceptional coder and a natural leader. He developed an AI-based library management system that is now used by the entire college.",
       socials: {
@@ -33,7 +33,7 @@ const TopStudents = () => {
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400",
       department: "Electrical Engineering",
       gpa: "3.98",
-      role: "Research Head",
+      role: "student",
       description:
         "Sarah specializes in renewable energy. She has published two international research papers on high-efficiency solar panel designs during her junior year.",
       socials: {
@@ -50,7 +50,7 @@ const TopStudents = () => {
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400",
       department: "Business Admin",
       gpa: "3.95",
-      role: "Debate President",
+      role: "student",
       description:
         "David is a master of communication. He led the college debate team to victory in the National Inter-University Championship 2025.",
       socials: {
@@ -67,7 +67,7 @@ const TopStudents = () => {
         "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400",
       department: "Architecture",
       gpa: "3.92",
-      role: "Design Lead",
+      role: "student",
       description:
         "Emily has a unique vision for sustainable urban spaces. Her 'Green City' project won the Best Architectural Concept award at the Regional Expo.",
       socials: {
@@ -84,7 +84,7 @@ const TopStudents = () => {
         "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400",
       department: "Mechanical Eng.",
       gpa: "3.90",
-      role: "Robotics Captain",
+      role: "student",
       description:
         "Michael is the brain behind the 'Titan-X' autonomous rover. He is currently working on a robotics project funded by the National Space Agency.",
       socials: {

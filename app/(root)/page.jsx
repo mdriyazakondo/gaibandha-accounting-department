@@ -13,8 +13,9 @@ const page = () => {
       <AboutSection />
       <Faculty />
       <Services></Services>
-      <GallerySection />
       <TopStudents />
+      <GallerySection />
+      {/* <LeafletMap /> */}
     </div>
   );
 };

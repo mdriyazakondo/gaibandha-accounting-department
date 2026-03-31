@@ -3,9 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import LightBox from "@/components/LightBox/LIghtBox";
 
-// Swiper Imports
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
@@ -13,6 +11,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import TeacherLightBox from "@/components/LightBox/TeacherLighBox";
 
 const Faculty = () => {
   const [selectedTeacher, setSelectedTeacher] = useState(null);
@@ -23,6 +22,8 @@ const Faculty = () => {
       name: "Dr. Robert Wilson",
       image:
         "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400",
+
+      role: "teacher",
       department: "Computer Science",
       designation: "Head of Department",
       experience: "18+ Years",
@@ -40,6 +41,8 @@ const Faculty = () => {
       name: "Prof. Sarah Adams",
       image:
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400",
+
+      role: "teacher",
       department: "Electrical Engineering",
       designation: "Senior Professor",
       experience: "15+ Years",
@@ -57,6 +60,8 @@ const Faculty = () => {
       name: "Dr. James Anderson",
       image:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400",
+
+      role: "teacher",
       department: "Mechanical Eng.",
       designation: "Associate Professor",
       experience: "12+ Years",
@@ -74,6 +79,8 @@ const Faculty = () => {
       name: "Mrs. Emily Watson",
       image:
         "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400",
+
+      role: "teacher",
       department: "Business Admin",
       designation: "Assistant Professor",
       experience: "08+ Years",
@@ -91,6 +98,8 @@ const Faculty = () => {
       name: "Dr. Michael Chen",
       image:
         "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400",
+
+      role: "teacher",
       department: "Civil Engineering",
       designation: "Professor",
       experience: "20+ Years",
@@ -108,6 +117,8 @@ const Faculty = () => {
       name: "Dr. David Miller",
       image:
         "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400",
+
+      role: "teacher",
       department: "Mathematics",
       designation: "Senior Lecturer",
       experience: "10+ Years",
@@ -125,6 +136,8 @@ const Faculty = () => {
       name: "Dr. Linda Garcia",
       image:
         "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400",
+
+      role: "teacher",
       department: "Physics",
       designation: "Researcher",
       experience: "14+ Years",
@@ -154,14 +167,12 @@ const Faculty = () => {
           <div className="mt-4 w-24 h-1.5 bg-primary mx-auto rounded-full"></div>
         </div>
 
-        {/* Swiper Slider */}
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
           spaceBetween={25}
           slidesPerView={1}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
-        //   navigation={true}
           breakpoints={{
             640: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
@@ -212,10 +223,9 @@ const Faculty = () => {
           ))}
         </Swiper>
 
-        {/* Lightbox Modal */}
         <AnimatePresence>
           {selectedTeacher && (
-            <LightBox
+            <TeacherLightBox
               selectedStudent={selectedTeacher}
               close={() => setSelectedTeacher(null)}
             />
@@ -223,7 +233,6 @@ const Faculty = () => {
         </AnimatePresence>
       </div>
 
-      {/* Custom CSS for Swiper Buttons and Pagination */}
       <style jsx global>{`
         .faculty-slider .swiper-button-next,
         .faculty-slider .swiper-button-prev {

@@ -126,7 +126,7 @@ const GallerySection = () => {
                       e.stopPropagation();
                       setSelectedImg(img);
                     }}
-                    className={`relative w-16 h-16 md:w-20 md:h-20 flex-shrink-0 rounded-lg overflow-hidden cursor-pointer border-2 transition-all ${
+                    className={`relative w-16 h-16 md:w-20 md:h-20 shrink-0 rounded-lg overflow-hidden cursor-pointer border-2 transition-all ${
                       selectedImg.id === img.id
                         ? "border-primary scale-110 shadow-lg"
                         : "border-transparent opacity-50"
