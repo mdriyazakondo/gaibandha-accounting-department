@@ -1,13 +1,17 @@
+import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 
 // layout.jsx example
 export default function RootLayout({ children }) {
   return (
-    <html >
+    <html>
       {/* Ensure the font variable and your custom classes are both included */}
       <body>
         <Navbar />
         {children}
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );
