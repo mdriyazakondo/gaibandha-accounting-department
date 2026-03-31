@@ -1,7 +1,6 @@
-import ShareButton from "@/components/Button/ShareButton";
 import Image from "next/image";
 
-export default function AboutSection() {
+export default function AboutSections() {
   return (
     <section className="py-20 px-6 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12 justify-center">
@@ -61,10 +60,6 @@ export default function AboutSection() {
                 Career Counseling
               </span>
             </div>
-          </div>
-
-          <div>
-            <ShareButton text={"  Read More History"} link={"/about-us"} />
           </div>
         </div>
       </div>

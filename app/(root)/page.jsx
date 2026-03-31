@@ -1,3 +1,4 @@
+import PrincipalSection from "@/components/About/PrincipalSection/PrincipalSection";
 import AboutSection from "@/components/Home/AboutSection/AboutSection";
 import Faculty from "@/components/Home/Faculty/Faculty";
 import GallerySection from "@/components/Home/GallerySection/GallerySection";
@@ -11,6 +12,7 @@ const page = () => {
     <div>
       <HeroSection />
       <AboutSection />
+      <PrincipalSection />
       <Faculty />
       <Services></Services>
       <TopStudents />

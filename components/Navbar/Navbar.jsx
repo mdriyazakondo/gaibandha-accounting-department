@@ -16,8 +16,8 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "#" },
-    { name: "About Us", href: "#" },
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about-us" },
     { name: "Campus File", href: "#" },
     { name: "Teacher", href: "#" },
     { name: "Success Student", href: "#" },
@@ -31,7 +31,6 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
           <div className="flex items-center cursor-pointer group">
             <div className="relative w-12 h-12 flex items-center justify-center">
               <svg
@@ -78,41 +77,38 @@ const Navbar = () => {
             </div>
 
             <div className="ml-3 flex flex-col">
-              <span className="font-black text-xl leading-none uppercase tracking-tighter text-(--color-primary)">
+              <span className="font-black text-xl leading-none uppercase tracking-tighter text-primary">
                 Accounting
               </span>
-              <span className="text-[9px] font-bold uppercase tracking-[0.3em] mt-0.5 text-(--color-secondary)">
+              <span className="text-[9px] font-bold uppercase tracking-[0.3em] mt-0.5 text-secondary">
                 Department
               </span>
             </div>
           </div>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="px-4 py-2 rounded-full text-sm font-bold transition-all duration-200 hover:bg-pink-50 text-(--color-secondary)"
+                className="px-4 py-2 rounded-full text-sm font-bold transition-all duration-200 hover:bg-pink-50 text-secondary"
               >
                 <span className="relative group">
                   {link.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full bg-(--color-primary)"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full bg-primary"></span>
                 </span>
               </a>
             ))}
           </div>
 
-          {/* Desktop Button */}
           <div className="hidden md:block">
             <ShareButton text="Login " />
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-lg text-(--color-secondary) bg-(--color-light-gray)"
+              className="p-2 rounded-lg text-secondary bg-light-gray"
             >
               <svg
                 className="h-6 w-6"
